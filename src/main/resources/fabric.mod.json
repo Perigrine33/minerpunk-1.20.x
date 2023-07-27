@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "minerpunk",
+	"version": "${version}",
+	"name": "Minerpunk",
+	"description": "A cyberpunk themed installation mod based on Flaxbeard's Cyberware mod, and the Cyberpunk RED world.",
+	"authors": [
+		"Perigrine3"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/minerpunk/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.perigrine3.minerpunk.MinerpunkMod"
+		],
+		"client": [
+			"net.perigrine3.minerpunk.MinerpunkModClient"
+		],
+		"fabric-datagen": [
+			"net.perigrine3.minerpunk.MinerpunkModDataGenerator"
+		]
+	},
+	"mixins": [
+		"minerpunk.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
